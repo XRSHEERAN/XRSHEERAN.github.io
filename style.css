@@ -122,5 +122,5 @@ img:hover{
 	-webkit-transition:all 0.5s;
 	transform: scale(1.5);
 }
-h1,h2{margin-left: 2%;}
+h1,h2,h3,p{margin-left: 2%;margin-right: 2%;}
 h3,h5{line-height: 0px;}

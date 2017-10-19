@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
     <version>2.0.0.0</version>
-    <url>http://rbsoft.org/downloads/AutoUpdaterTest.zip</url>
+    <url>https://github.com/smith-chem-wisc/MetaMorpheus/releases/download/0.0.201/MetaMorpheusGuiDotNetFrameworkAppveyor.zip</url>
     <changelog>https://github.com/smith-chem-wisc/MetaMorpheus/releases</changelog>
     <mandatory>false</mandatory>
 </item>

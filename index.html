@@ -1,76 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Xainrun Qu's Webpage</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Xianrun's WebPage</title>
+
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="JSSupport.js"></script>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link rel="icon" type="image/gif" href="img\ico.PNG" />
 <body>
 
-	<div class="menu">
-		<div id="mn_inside"><span style="font-weight: 600;font-family: arial;">Hello World</span> | Things About <span style="font-style: italic;">Xianrun</span></div>
-	</div>
-	
-	<div class="side" id="left">
-		<div class="imgs">
-			<a href="img\me.jpg"><img src="img\me.jpg" alt="Me"></a>
-		</div>
-		<div style="text-align: center;">
-			<h3>Xianrun Qu</h3>
-			<h3>UW-Madison <img src="img\uw.jpg" alt="school_ico" style="width: 20%;height: 4%"></h3>
-			<h5>CS Major & Lover</h5>
-			<h5>Statistics Major</h5>
-		</div>
-		<div style="background-color: inherit; border-top: 1px solid #7c7478; margin: 5% auto; width: 100%;text-align: center;padding-bottom: 5px;">
-			<h3>Copy of re&#769;sume&#769;</h3>
-			<a href="resume.pdf">Pdf</a>
-		</div>
-	</div>
+<!--
+-->
+<div class="menu" style="margin-top: 10px; padding: 5px; text-align: center; width: 100%;background-color: #2d3f3e;position: fixed;border-radius: 5px;display: block;	top: 0px;	left: 0px;	z-index: 20;">
+    <div id="mn_inside"><span style="color: #e8f4f4; font-weight: 600;font-family: arial;">Hello World | Things About </span> <span style="color: #4ccff7; font-style: italic;">Xianrun</span></div>
+</div>
+<div style="width: 90%; min-width: 300px; height: 400px;margin: 10% auto; " id="outer">
+    <div style="display: inline-block;height: 100%;float: left; width: 30%; ">
+        <div id="contact" class="box">
+            <p>Xianrun (Sheeran) Qu</p>
+            <p>Mobile: 608-556-1507</p>
+            <p>E-Mail: xqu25@wisc.edu</p>
+        </div>
+        <div class="imgs" id="photo">
+            <a href="img\me.jpg"><img id="img_person" src="img\me.jpg" alt="Me"></a>
+        </div>
+    </div>
+    <div ng-app="" style="padding-top:2%; display: inline-block;height: 100%;float: left; margin-top:3%; margin-left: 6%; width: 55%; text-align: center" class="box1">
+        <p style="font-weight: 200; text-align:left; font-family: 'Franklin Gothic Heavy'; font-size: x-small">	&nbsp;Please Type Following Request To View(Initial Character)</p>
+        <ul style="font-family: 'Courier New';text-align: left; font-size: x-small">
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Re&#769;sume&#769;</li>
+            <br/>
+        </ul>
+        <span style="text-align: left; font-family: Arial; font-size: small ">Your Choice: <input id="choice" type="text" ng-model="choice"/></span>
+        <button style="margin:0 auto; background-color: aliceblue" id="clr">Clear</button>
+        <br/>
+        <p style="text-align: center; margin-bottom:2px; overflow: hidden; font-family: 'Agency FB'; ">{{choice}}</p>
+        <p style="margin-top: 0" id="checker"></p>
+        <p>-----------------------------------------------------------------</p>
+        <button id="redir" class="box">Or One-Click To View & Make Life Easier</button>
+        <br/>
 
-	<div id="container">
-	<div id="mid">
-	<h1>Git Projects</h1>
-		<h2>Web Programming (Check Online)</h2>
-		<ul>
-			<li>
-			<span class="li_ttl">Color Game</span>
-			<a href="Color_proj\index.html" class="li_sub">Try Online</a>
-			<a href="Color_proj\summary.html" class="li_sub">Summary</a>
-			</li>
-		</ul>
-		<h2>Small Projects</h2>
-		<ul>
-			<li><span class="li_ttl">DB & Text Handling
-			</span>
-			<a href="Summary_acc.html" class="li_sub">Codes & Summary</a>
-			</li>
-			<li><span class="li_ttl">C# Practice
-			</span>
-			<a href="Summary_acc" class="li_sub">Codes & Summary</a>
-			</li>
-		</ul>
-		<h2>School Projects</h2>
-		<ul>
-			<li><span class="li_ttl">Compiler
-			</span>
-			<a href="Summary_cmp.html" class="li_sub">Description</a>
-			</li>
-			<li><span class="li_ttl">Yelp Score Prediction
-			</span>
-			<a href="Summary_ylp.html" class="li_sub">Description</a>
-			</li>
-			<li>
-			<span class="li_ttl"><a href="schoolwork.html">School Policy</a>
-			</span>
-			</li>
-		</ul>
-	</div>
-	<div class="right" style="background-color: #fcedbd;border-radius: 5px;margin-top: 20px;height:100px;text-align: center;">
-		<h3 style="font-family: arial;line-height: 20px;">Email:</h3>
-		<h4 style="font-style: italic;">xqu25@wisc.edu</h4>
-	</div>
+
+    </div>
 
 </div>
 
-	<div style="background-color: #667062; width: 100%;display:block;height: 40px;box-sizing: border-box;text-align: center;color: white;">Thanks for Visiting</div>
+<div style="width: 70%; margin:0px auto; visibility: hidden; opacity: 0;position: absolute;" class="showBox" class="box" id="Me">
+
+    <h3>About Me</h3>
+    <ul style="font-family: 'AlternateGothic2 BT';font-size: small">
+        <li><span style="top: 0;">University Of Wisconsin - Madison</span> <img src="img\uw.jpg" alt="school_ico" style="margin-left:5px; width: 10%;height: 2%"></li>
+        <li>Computer Science & Statistics</li>
+        <li><u>Name:</u> Xianrun Qu (It is okay to prounance it as 'Zi-Run') || I can also go with Sheeran </li>
+        <li>
+            <u>Skills</u> (<span style="color: crimson">&#8226;<span style="font-size: smaller">Proficient</span></span><span style="color: #dcd75c">&#8226;<span style="font-size: smaller">Intermediate</span></span><span style="color: #9eb2c3">&#8226;<span style="font-size: smaller">Basic</span></span> )</li>
+
+        <ul><span style="color: crimson">Java</span>|<span style="color: crimson">C#</span>|<span style="color: crimson">R</span>|<span style="color: crimson">JavaScript (#1 Favourite)</span>|<span style="color: #dcd75c">HTML</span>|<span style="color: #dcd75c">CSS</span>|<span style="color: #dcd75c">Git</span>|<span style="color: #dcd75c">C (CPP)</span>|<span style="color: #9eb2c3">Angular JS</span>|<span style="color: #9eb2c3">Node.js (npm, Express)</span>... (More && Updates on Re&#769;sume&#769;)  </ul>
+
+        </li>
+
+        <li><u>This Site:</u>  I designed and built this github page from scratch with pure <span style="color: chartreuse; font-style: italic">HTML</span>,<span style="color: #ff796c; font-style: italic"> CSS</span>,<span style="color: #7edaff; font-style: italic"> JavaScript</span> and a little <span style="color: #ffb928; font-style: italic">Angular JS</span> . Although it is kind of plain compared with those using fancy API like bootstrap, it is definitely better for me to experience Web Programing (My #2 Favourite) and have more fun! </li>
+        <li><u>Experience:</u> Currently doing an on-Campus Intern (C# Developer) @ <a href="http://smith.chem.wisc.edu/" target="_blank">L. M. Smith Group</a>. Previous Interns are included in Re&#769;sume&#769;.</li>
+        <li><a style="color: palevioletred" href="resume.pdf">Copy Of My Re&#769;sume&#769;</a> (Sorry to mention it again but please have a look!)</li>
+    </ul>
+
+</div>
+<div style="width: 70%; margin:0px auto; visibility: hidden; opacity: 0;position: absolute;" class="showBox" class="box" id="Proj">
+    <h3>Projects:</h3>
+    <ul style="font-family: 'AlternateGothic2 BT';font-size: small">
+        <li ><u style="color: crimson">JavaScript</u></li>
+        <ul>
+            <li>Color Game: <a href="Color_proj\index.html">Try It Online</a> | <a href="Color_proj\summary.html">Description</a> </li>
+            <li>Graphics: <a href="grap\summary.html">Description</a> </li><ul><li>2D Hierarchy: <a href="grap\2d\index.html">view</a> </a></li><li>3D Hierarchy: <a href="grap\3d\index.html">view</a> </a></li></ul></li>
+        </ul>
+        <li ><u style="color: crimson">C#</u></li>
+        <ul>Current project in work. Done installer (Setup) which appears in version 205. Also improving GUI part and a little searching algorithm. <a href="https://github.com/XRSHEERAN/MetaMorpheus">view</a> </ul>
+        <li>Other projects can be found on my GitHub Page. <a href="https://github.com/XRSHEERAN">view</a></li>
+
+    </ul>
+</div>
+<div style="width: 70%; margin:0px auto; visibility: hidden; opacity: 0;position: absolute;" class="showBox" class="box" id="Resume">
+    <a href="resume.pdf">Re&#769;sume&#769;</a>
+</div>
 </body>
 </html>

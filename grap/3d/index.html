@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="[add your bin description]">
+    <meta charset="utf-8">
+    <title>Universe Pyramid</title>
+    <!-- you need to load TWGL from somewhere -
+      -- this grabs it from the CS server, which
+      -- might take a while
+      -->
+    <p>Description: This is a Pyramid in the universe with four gems floating arouund it. The UFOs<br> are flying around with unique orbits. (5 Control Bars are under the canvas)</p>
+    <canvas id="myCanvas"
+            width="850" height="500"
+            style="border:1px solid #000;">
+    </canvas><br/>
+    <p>speed (Left to slow down, right to speed up)<input id="slider1" type="range" min="0.1" max="5.1" step="0.2" />
+    Horizon View<input id="slider2" type="range" min="-100" max="100" /></p>
+    <p>left: fill color; right: skeleton
+    <input id="slider3" type="range" min="0" max="1" step="1" />
+    vertical view
+    <input id="slider4" type="range" min="-100" max="100" />
+    </p><p>perspective (fov)<input id="slider5" type="range" min="1" max="10" step="0.1"/></p>
+    <script src="http://graphics.cs.wisc.edu/JS/twgl-full.min.js"></script>
+    <script src="canvas.js"></script>
+</head>
+<body>
+
+</body>
+</html>

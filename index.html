@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Xianrun's WebPage</title>
-
+  <title>Xianrun Space</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/gif" href="https://farm5.staticflickr.com/4705/40224863681_a119b102ba_t.jpg" />
+  <script src="http://graphics.cs.wisc.edu/JS/twgl-full.min.js"></script>
+    <script src="canvas.js"></script>
+    <script type="text/javascript">
+      function btncor(cor) {
+      document.body.style.background = cor;
+    }
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script src="JSSupport.js"></script>
-<link rel="stylesheet" type="text/css" href="style1.css">
-<link rel="icon" type="image/gif" href="img\ico.PNG" />
 <body>
+  
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #535050;height:80px; min-height:80px;">
+  <a style="color:#E3F1FD" class="navbar-brand" href="">My Page | Xianrun Qu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<!--
--->
-<div class="menu" style="margin-top: 10px; padding: 5px; text-align: center; width: 100%;background-color: #2d3f3e;position: fixed;border-radius: 5px;display: block;	top: 0px;	left: 0px;	z-index: 20;">
-    <div id="mn_inside"><span style="color: #e8f4f4; font-weight: 600;font-family: arial;">Hello World | Things About </span> <span style="color: #4ccff7; font-style: italic;">Xianrun</span></div>
-</div>
-<div style="width: 90%; min-width: 300px; height: 400px;margin: 10% auto; " id="outer">
-    <div style="display: inline-block;height: 100%;float: left; width: 30%; ">
-        <div id="contact" class="box">
-            <p>Xianrun (Sheeran) Qu</p>
-            <p>Mobile: 608-556-1507</p>
-            <p>E-Mail: xqu25@wisc.edu</p>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="background:#535050;">
+      <li class="active nav-item" style="background:#edd5de" data-toggle="tooltip" data-placement="top" title="Home Page" ><a class="nav-link" style="color:#db2e73" href="">&nbsp;Home&nbsp;</a></li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Project Summary"><a class="nav-link" style="color:#F0A1A2" href="proj.html">&nbsp;Projects&nbsp;</a></li>
+      <li class="nav-item"  data-toggle="tooltip" data-placement="top" title="Link to Resume"><a class="nav-link" style="color:aqua" href='resume.pdf'>&nbsp;Re&#769;sume&#769;&nbsp;</a></li>
+      <li class="nav-item"  data-toggle="tooltip" data-placement="top" title="What I did"><a class="nav-link" style="color:#8EE1AC" href="exp.html">&nbsp;Experience&nbsp;</a></li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Page Information" ><a class="nav-link" style="color:coral" href="About.html">&nbsp;About&nbsp;</a></li>
+      </ul>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid" style="margin-top: 80px;">
+  
+  </div>
+  <div class="row">
+  <div class="offset-sm-2 offset-lg-0 col-sm-10  col-md-8 col-lg-5">
+    
+    <div class="card jumbotron" style="width: 75%; background:#edd6b6; padding-left:0;padding-right: 0;padding-bottom:0;">
+      
+    <img class="card-img-top img-fluid rounded-circle" src="https://farm5.staticflickr.com/4660/26352484008_3cdabe5a3f_z.jpg" style="width: 65%; margin: 0 auto;" alt="Me">
+    
+    <div class="card-body jumbotron" style="background-color: #474e5d;margin-top:5%;margin-bottom:0;">
+      <div class="container-fluid" style="background-color: #474e5d;">
+        <h3 class="card-title"><span class="border border-white text-white" style="background:black;">Hey, Xianrun</span></h3>
+        <div class="card-text">
+          <div class="text-danger border border-danger" style="background: #ededed;margin-bottom:1%;"><h6>University of Wisconsin-Madison</h6></div>
+          <div class="text-info border border-info" style="background: #ededed;margin-bottom:1%;"><h6>Comp Sci Major +</h6></div>
+          <div class="text-warning border border-warning" style="background: #ededed;margin-bottom:1%;"><h6>Statistics Courses</h6></div>
         </div>
-        <div class="imgs" id="photo">
-            <a href="img\me.jpg"><img id="img_person" src="img\me.jpg" alt="Me"></a>
+        <h3 class="card-title" style="margin-top:3%;"><span class="border border-white text-white" style="background:black;">Yea, Me</span></h3>
+        <div class="card-body border border-success text-success" style="background:white;"><h3>Programmer in Nature</h3>
+        <h5>Email:&nbsp;&nbsp;xqu25@wisc.edu</h5>
+        <h5>Mobile:&nbsp;1-608-556-1507</h5>
+        <a type="button" class="btn-floating btn-small btn-gh" href="https://github.com/XRSHEERAN"><i class="fa fa-github" style="font-size:36px"></i></a>
         </div>
+      </div>
     </div>
-    <div ng-app="" style="padding-top:2%; display: inline-block;height: 100%;float: left; margin-top:3%; margin-left: 6%; width: 55%; text-align: center" class="box1">
-        <p style="font-weight: 200; text-align:left; font-family: 'Franklin Gothic Heavy'; font-size: x-small">	&nbsp;Please Type Following Request To View(Initial Character)</p>
-        <ul style="font-family: 'Courier New';text-align: left; font-size: x-small">
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Re&#769;sume&#769;</li>
-            <br/>
-        </ul>
-        <span style="text-align: left; font-family: Arial; font-size: small ">Your Choice: <input id="choice" type="text" ng-model="choice"/></span>
-        <button style="margin:0 auto; background-color: aliceblue" id="clr">Clear</button>
-        <br/>
-        <p style="text-align: center; margin-bottom:2px; overflow: hidden; font-family: 'Agency FB'; ">{{choice}}</p>
-        <p style="margin-top: 0" id="checker"></p>
-        <p>-----------------------------------------------------------------</p>
-        <button id="redir" class="box">Or One-Click To View & Make Life Easier</button>
-        <br/>
+  </div>
+  </div>
+  <div class="col-sm-8 offset-sm-2 col-md-4 offset-md-0 col-lg-5 offset-lg-1" style="min-width:425px;min-height:250px;">
+    <div class="jumbotron" style="text-align:center; margin-top:2%;"><h4>For Me,</h4><p>actions always speak louder than thoughts. Here is a piece of my JS Design and more to explore in the projects.</p></div>
+    <canvas id="myCanvas"
+            width="425" height="350"
+            style="border:1px solid #000;"></canvas>
+            <div class="container">
+            <button type="button" class="btn btn-success" onclick="btncor('#33a014');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
 
+<button type="button" class="btn btn-info" onclick="btncor('#4cafe0');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
+<button type="button" class="btn btn-warning" onclick="btncor('#f2ec79');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
 
-    </div>
-
+<button type="button" class="btn btn-danger" onclick="btncor('#e03e61');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
+<button type="button" class="btn btn-secondary" style="background:white;" onclick="btncor('#f7f6ef');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
+<button type="button" class="btn" style="background:#6e699e;" onclick="btncor('#8a84c9');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
+<button type="button" class="btn" style="background:#c649c2;" onclick="btncor('#d85bd4');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
+<button type="button" class="btn" style="background:#5ab5bc;" onclick="btncor('#75e2ea');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
+<button type="button" class="btn" style="background:#c49e52;" onclick="btncor('#e5bb67');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
+<button type="button" class="btn" style="background:black;" onclick="btncor('white');" data-toggle="tooltip" data-placement="top" title="Reset"></button>
+            </div>
+            </div>
 </div>
 
-<div style="width: 70%; margin:0px auto; visibility: hidden; opacity: 0;position: absolute;" class="showBox" class="box" id="Me">
 
-    <h3>About Me</h3>
-    <ul style="font-family: 'AlternateGothic2 BT';font-size: small">
-        <li><span style="top: 0;">University Of Wisconsin - Madison</span> <img src="img\uw.jpg" alt="school_ico" style="margin-left:5px; width: 10%;height: 2%"></li>
-        <li>Computer Science & Statistics</li>
-        <li><u>Name:</u> Xianrun Qu (It is okay to prounance it as 'Zi-Run') || I can also go with Sheeran </li>
-        <li>
-            <u>Skills</u> (<span style="color: crimson">&#8226;<span style="font-size: smaller">Proficient</span></span><span style="color: #dcd75c">&#8226;<span style="font-size: smaller">Intermediate</span></span><span style="color: #9eb2c3">&#8226;<span style="font-size: smaller">Basic</span></span> )</li>
 
-        <ul><span style="color: crimson">Java</span>|<span style="color: crimson">C#</span>|<span style="color: crimson">R</span>|<span style="color: crimson">JavaScript (#1 Favourite)</span>|<span style="color: #dcd75c">HTML</span>|<span style="color: #dcd75c">CSS</span>|<span style="color: #dcd75c">Git</span>|<span style="color: #dcd75c">C (CPP)</span>|<span style="color: #9eb2c3">Angular JS</span>|<span style="color: #9eb2c3">Node.js (npm, Express)</span>... (More && Updates on Re&#769;sume&#769;)  </ul>
-
-        </li>
-
-        <li><u>This Site:</u>  I designed and built this github page from scratch with pure <span style="color: chartreuse; font-style: italic">HTML</span>,<span style="color: #ff796c; font-style: italic"> CSS</span>,<span style="color: #7edaff; font-style: italic"> JavaScript</span> and a little <span style="color: #ffb928; font-style: italic">Angular JS</span> . Although it is kind of plain compared with those using fancy API like bootstrap, it is definitely better for me to experience Web Programing (My #2 Favourite) and have more fun! </li>
-        <li><u>Experience:</u> Currently doing an on-Campus Intern (C# Developer) @ <a href="http://smith.chem.wisc.edu/" target="_blank">L. M. Smith Group</a>. Previous Interns are included in Re&#769;sume&#769;.</li>
-        <li><a style="color: palevioletred" href="resume.pdf">Copy Of My Re&#769;sume&#769;</a> (Sorry to mention it again but please have a look!)</li>
-    </ul>
-
-</div>
-<div style="width: 70%; margin:0px auto; visibility: hidden; opacity: 0;position: absolute;" class="showBox" class="box" id="Proj">
-    <h3>Projects:</h3>
-    <ul style="font-family: 'AlternateGothic2 BT';font-size: small">
-        <li ><u style="color: crimson">JavaScript</u></li>
-        <ul>
-            <li>Color Game: <a href="Color_proj\index.html">Try It Online</a> | <a href="Color_proj\summary.html">Description</a> </li>
-            <li>Graphics: <a href="grap\summary.html">Description</a> </li><ul><li>2D Hierarchy: <a href="grap\2d\index.html">view</a> </a></li><li>3D Hierarchy: <a href="grap\3d\index.html">view</a> </a></li></ul></li>
-        </ul>
-        <li ><u style="color: crimson">C#</u></li>
-        <ul>Current project in work. Done installer (Setup) which appears in version 205. Also improving GUI part and a little searching algorithm. <a href="https://github.com/XRSHEERAN/MetaMorpheus">view</a> </ul>
-        <li>Other projects can be found on my GitHub Page. <a href="https://github.com/XRSHEERAN">view</a></li>
-
-    </ul>
-</div>
-<div style="width: 70%; margin:0px auto; visibility: hidden; opacity: 0;position: absolute;" class="showBox" class="box" id="Resume">
-    <a href="resume.pdf">Re&#769;sume&#769;</a>
-</div>
 </body>
 </html>

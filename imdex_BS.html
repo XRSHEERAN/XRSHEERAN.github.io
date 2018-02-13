@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="csssup.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="icon" type="image/gif" href="https://farm5.staticflickr.com/4705/40224863681_a119b102ba_t.jpg" />
@@ -33,10 +33,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto" style="background:#535050;">
       <li class="active nav-item" style="background:#edd5de" data-toggle="tooltip" data-placement="top" title="Home Page" ><a class="nav-link" style="color:#db2e73" href="">&nbsp;Home&nbsp;</a></li>
-      <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Home Page"><a class="nav-link" style="color:#F0A1A2" href="proj.html">&nbsp;Projects&nbsp;</a></li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Project Summary"><a class="nav-link" style="color:#F0A1A2" href="proj.html">&nbsp;Projects&nbsp;</a></li>
       <li class="nav-item"  data-toggle="tooltip" data-placement="top" title="Link to Resume"><a class="nav-link" style="color:aqua" href='resume.pdf'>&nbsp;Re&#769;sume&#769;&nbsp;</a></li>
-      <li class="nav-item"  data-toggle="tooltip" data-placement="top" title="What I did"><a class="nav-link" style="color:#8EE1AC">&nbsp;Experience&nbsp;</a></li>
-      <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Page Information" ><a class="nav-link" style="color:coral">&nbsp;About&nbsp;</a></li>
+      <li class="nav-item"  data-toggle="tooltip" data-placement="top" title="What I did"><a class="nav-link" style="color:#8EE1AC" href="exp.html">&nbsp;Experience&nbsp;</a></li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Page Information" ><a class="nav-link" style="color:coral" href="About.html">&nbsp;About&nbsp;</a></li>
       </ul>
   </div>
 </nav>
@@ -57,12 +57,16 @@
       <div class="container-fluid" style="background-color: #474e5d;">
         <h3 class="card-title"><span class="border border-white text-white" style="background:black;">Hey, Xianrun</span></h3>
         <div class="card-text">
-          <div class="text-warning border border-warning" style="background: #2a2b2b;margin-bottom:1%;"><h6>University of Wisconsin-Madison</h6></div>
+          <div class="text-danger border border-danger" style="background: #ededed;margin-bottom:1%;"><h6>University of Wisconsin-Madison</h6></div>
           <div class="text-info border border-info" style="background: #ededed;margin-bottom:1%;"><h6>Comp Sci Major +</h6></div>
-          <div class="text-danger border border-danger" style="background: #f9f6cc;margin-bottom:1%;"><h6>Statistics Courses</h6></div>
+          <div class="text-warning border border-warning" style="background: #ededed;margin-bottom:1%;"><h6>Statistics Courses</h6></div>
         </div>
         <h3 class="card-title" style="margin-top:3%;"><span class="border border-white text-white" style="background:black;">Yea, Me</span></h3>
-        <div class="card-body border border-success text-success" style="background:white;"><h3>Programmer in Nature</h3></div>
+        <div class="card-body border border-success text-success" style="background:white;"><h3>Programmer in Nature</h3>
+        <h5>Email:&nbsp;&nbsp;xqu25@wisc.edu</h5>
+        <h5>Mobile:&nbsp;1-608-556-1507</h5>
+        <a type="button" class="btn-floating btn-small btn-gh" href="https://github.com/XRSHEERAN"><i class="fa fa-github" style="font-size:36px"></i></a>
+        </div>
       </div>
     </div>
   </div>
@@ -71,7 +75,7 @@
     <div class="jumbotron" style="text-align:center; margin-top:2%;"><h4>For Me,</h4><p>actions always speak louder than thoughts. Here is a piece of my JS Design and more to explore in the projects.</p></div>
     <canvas id="myCanvas"
             width="425" height="350"
-            style="border:1px solid #000;margin:auto auto;"></canvas>
+            style="border:1px solid #000;"></canvas>
             <div class="container">
             <button type="button" class="btn btn-success" onclick="btncor('#33a014');" data-toggle="tooltip" data-placement="top" title="Change Color"></button>
 

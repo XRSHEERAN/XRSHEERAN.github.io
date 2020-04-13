@@ -107,6 +107,11 @@ section {
     border: 5px solid black;
 }
 
+.auto_margin{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid#e9edf5;

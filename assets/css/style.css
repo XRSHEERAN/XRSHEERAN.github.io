@@ -149,21 +149,21 @@ section {
 }
 
 /*/////////////////////////////////////////
-Hero
+main
 ////////////////////////////////////////*/
 
-#hero {
+#main {
     text-align: center;
     font-size: 18px;
     margin-top: 60px;
 }
 
-#hero h1 {
+#main h1 {
     font-size: 46px;
     margin-bottom: 30px;
 }
 
-#hero p {
+#main p {
     margin-bottom: 20px;
 }
 
